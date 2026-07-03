@@ -8,26 +8,24 @@
 <meta property="og:title" content="Аружан Смагулова — практикующий психолог" />
 <meta property="og:description" content="Психология, которая работает: КПТ и транзактный анализ. Конкретные шаги, без эзотерики." />
 <meta property="og:type" content="website" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<!-- System Helvetica, no web fonts -->
 <style>
   :root{
-    --bg:#F6F1EA;
-    --bg-alt:#EEE6D9;
-    --card:#FDFBF7;
-    --ink:#2A2622;
-    --muted:#6C655B;
-    --accent:#55706A;
-    --accent-dark:#3F544F;
-    --line:#E2D8C9;
+    --bg:#FFFFFF;
+    --bg-alt:#F6F3F4;
+    --card:#FFFFFF;
+    --ink:#111111;
+    --muted:#5A5458;
+    --accent:#7A1E2E;
+    --accent-dark:#5C1622;
+    --line:#E7E2E4;
     --radius:16px;
     --maxw:1080px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{
-    font-family:'Manrope',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+    font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;
     background:var(--bg);
     color:var(--ink);
     line-height:1.7;
@@ -35,8 +33,8 @@
     font-size:17px;
     -webkit-font-smoothing:antialiased;
   }
-  h1,h2,h3{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;line-height:1.12;letter-spacing:.2px}
-  .serif{font-family:'Cormorant Garamond',Georgia,serif}
+  h1,h2,h3{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-weight:700;line-height:1.1;letter-spacing:-.01em}
+  .serif{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif}
   .wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
   .eyebrow{
     font-size:12px;letter-spacing:.22em;text-transform:uppercase;
@@ -46,14 +44,14 @@
   /* Buttons */
   .btn{
     display:inline-flex;align-items:center;gap:10px;
-    background:var(--accent);color:#F8F5EF;
+    background:var(--accent);color:#ffffff;
     padding:15px 30px;border-radius:10px;
     text-decoration:none;font-weight:600;font-size:15px;letter-spacing:.02em;
     border:1px solid var(--accent);
     transition:transform .18s ease, background .18s ease, box-shadow .18s ease;
-    box-shadow:0 6px 20px rgba(63,84,79,.16);
+    box-shadow:0 6px 20px rgba(122,30,46,.16);
   }
-  .btn:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 10px 28px rgba(63,84,79,.24)}
+  .btn:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 10px 28px rgba(122,30,46,.24)}
   .btn.ghost{background:transparent;color:var(--accent-dark);box-shadow:none;border:1px solid var(--line)}
   .btn.ghost:hover{background:var(--card);border-color:var(--accent)}
   /* Header */
@@ -64,7 +62,7 @@
     border-bottom:1px solid var(--line);
   }
   .nav{display:flex;align-items:center;justify-content:space-between;height:70px}
-  .brand{font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:600;letter-spacing:.5px;text-decoration:none}
+  .brand{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:26px;font-weight:600;letter-spacing:.5px;text-decoration:none}
   .brand span{color:var(--accent)}
   .nav-cta{font-size:14px;padding:11px 22px}
   .nav-right{display:flex;align-items:center;gap:12px}
@@ -83,7 +81,7 @@
     border:1px solid var(--line);
     display:flex;align-items:center;justify-content:center;
     color:#8A7E6C;font-size:14px;letter-spacing:.18em;text-transform:uppercase;
-    box-shadow:0 24px 60px rgba(63,84,79,.12);
+    box-shadow:0 24px 60px rgba(122,30,46,.12);
   }
   .portrait img{width:100%;height:100%;object-fit:cover;display:block}
   /* Sections */
@@ -128,7 +126,7 @@
   /* Format cards */
   .format{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
   .fmt{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px}
-  .fmt .num{font-family:'Cormorant Garamond',serif;font-size:2.6rem;color:var(--accent);line-height:1}
+  .fmt .num{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:2.6rem;color:var(--accent);line-height:1}
   .fmt h3{font-size:1.4rem;margin:12px 0 8px}
   .fmt p{color:var(--muted);font-size:15.5px}
   /* Education */
@@ -149,21 +147,21 @@
   .rules .mark{color:var(--accent);font-weight:700;flex:none}
   .rules .fine{font-size:15px;color:var(--muted);margin-top:6px}
   /* Approach / flow */
-  .flow{display:flex;flex-wrap:wrap;align-items:center;gap:14px;font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,3.4vw,2.4rem);color:var(--accent-dark);justify-content:center;margin-top:10px}
+  .flow{display:flex;flex-wrap:wrap;align-items:center;gap:14px;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:clamp(1.6rem,3.4vw,2.4rem);color:var(--accent-dark);justify-content:center;margin-top:10px}
   .flow .arrow{color:var(--accent);font-size:1.2em}
   .flow .eq{color:var(--ink)}
   /* Booking CTA */
-  .cta{background:var(--accent);color:#F6F1EA;border-radius:22px;padding:64px 40px;text-align:center}
-  .cta h2{font-size:clamp(2.2rem,5vw,3.4rem);color:#F6F1EA;margin-bottom:16px}
-  .cta p{color:#DCE6E1;font-size:18px;max-width:52ch;margin:0 auto 30px}
-  .cta .btn{background:#F6F1EA;color:var(--accent-dark);border-color:#F6F1EA}
+  .cta{background:var(--accent);color:#ffffff;border-radius:22px;padding:64px 40px;text-align:center}
+  .cta h2{font-size:clamp(2.2rem,5vw,3.4rem);color:#ffffff;margin-bottom:16px}
+  .cta p{color:rgba(255,255,255,.85);font-size:18px;max-width:52ch;margin:0 auto 30px}
+  .cta .btn{background:#ffffff;color:var(--accent-dark);border-color:#ffffff}
   .cta .btn:hover{background:#fff}
   /* Footer */
   footer{padding:44px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
   .foot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
   .socials{display:flex;gap:12px}
   .social{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);display:inline-flex;align-items:center;justify-content:center;color:var(--accent-dark);transition:all .18s ease}
-  .social:hover{background:var(--accent);color:#F6F1EA;border-color:var(--accent);transform:translateY(-2px)}
+  .social:hover{background:var(--accent);color:#ffffff;border-color:var(--accent);transform:translateY(-2px)}
   .social svg{width:20px;height:20px;fill:currentColor}
   /* Responsive */
   @media(max-width:860px){
